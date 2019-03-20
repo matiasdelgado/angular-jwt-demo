@@ -1,0 +1,7 @@
+[
+  { "name": "Agradecer sponsors", "done": true, "dueDate": null },
+  { "name": "Dar charla de jwt", "done": false, "dueDate": null },
+  { "name": "Avisar que la proxima meetup se corre", "done": false, "dueDate": null },
+  { "name": "Avisar que es en Endava", "done": false, "dueDate": null },
+  { "name": "Contar de los issues de github para llevar registro de las charlas", "done": false, "dueDate": null }
+]

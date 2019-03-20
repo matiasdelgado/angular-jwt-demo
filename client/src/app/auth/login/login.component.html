@@ -1,0 +1,21 @@
+<div class="container">
+    <h3 class="mb3">Login</h3>
+    <form id="loginForm" name="loginForm" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <p class="m0">Email</p>
+        <input type="email" class="form-control" formControlName="email" [class.invalid]="isFieldInvalid('email')">
+        <div class="mb0 mt1 error-message" *ngIf="submitted && isFieldInvalid('email')">
+            Email required
+        </div>
+        <p class="mb0 mt2">Password</p>
+        <input type="password" class="form-control" formControlName="password" [class.invalid]="isFieldInvalid('password')">
+        <div class="text--gray mb0 mt1 error-message" *ngIf="submitted && isFieldInvalid('password')">
+            Password required
+        </div>
+        <div class="mt3">
+            <button class="btn btn--default" type="submit" [disabled]="loading">Log In</button>
+            <div class="text--gray mb0 mt3 error-message" *ngIf="message">
+                <p>{{message}}</p>
+            </div>
+        </div>
+    </form>
+</div>

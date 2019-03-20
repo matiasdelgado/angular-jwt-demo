@@ -1,0 +1,5 @@
+<ul>
+  <li *ngFor="let user of users$ | async">
+    {{user.role}} - {{user.email}}
+  </li>
+</ul>

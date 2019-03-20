@@ -1,0 +1,6 @@
+<ul>
+  <li *ngFor="let todo of todos$ | async">{{ todo.done ? '[x]' : '[ ]' }} {{ todo.name}}</li>
+</ul>
+
+<a href="/admin">Admin</a>
+<button (click)="logout()">Logout</button>
